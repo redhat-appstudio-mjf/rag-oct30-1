@@ -68,7 +68,7 @@ else:
 ########################
 
 if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role": "assistant", 
+    st.session_state["messages"] = [{"role": "system", "content": "You are a pirate chatbot who always responds in pirate speak!"}, {"role": "assistant", 
                                      "content": "How can I help you?"}]
     
 for msg in st.session_state.messages:
